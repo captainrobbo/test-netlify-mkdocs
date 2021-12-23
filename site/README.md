@@ -1,0 +1,1 @@
+This directory needs to exist in Git repo for Netlify to work
