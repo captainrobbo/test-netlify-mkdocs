@@ -1,0 +1,50 @@
+site_name: ReportLab Docs
+
+extra_css:
+    - //use.typekit.net/gbg4fos.css
+    - css/rldocs.css
+
+theme:
+    name: material
+    # custom_dir: 'custom_theme/'
+markdown_extensions:
+  - codehilite
+  - toc
+  - pymdownx.tabbed
+  - pymdownx.betterem:
+      smart_enable: all
+
+
+nav:
+    - Home: index.md
+    - json2pdf: json2pdf/index.md
+    - ReportLab Plus Introduction: rmlfornewbies/index.md
+    - Builds and Releases: releases/index.md
+    - 'ReportLab User Guide': 
+        - 'Chapter 1: Introduction': reportlab/userguide/ch1_intro.md
+        - 'Chapter 2: Graphics and text with pdfgen': reportlab/userguide/ch2_graphics.md
+        - 'Chapter 3: Fonts': reportlab/userguide/ch3_fonts.md
+        - 'Chapter 4: Features': reportlab/userguide/ch4_pdffeatures.md
+        - 'Chapter 5: Platypus': reportlab/userguide/ch5_platypus.md
+        - 'Chapter 6: Paragraphs': reportlab/userguide/ch6_paragraphs.md
+        - 'Chapter 7: Tables': reportlab/userguide/ch7_tables.md
+        - 'Chapter 8: Programming flowables': reportlab/userguide/ch8_programming_flowables.md
+        - 'Chapter 9: Other useful flowables': reportlab/userguide/ch9_other_useful_flowables.md
+        - 'Chapter 10: Writing Tour Own flowables': reportlab/userguide/ch10_writing_own_flowables.md
+        - 'Chapter 11: Graphics': reportlab/userguide/ch11_graphics.md
+
+    - Preppy: preppy/index.md
+    - Staff: staff/staff.md
+
+
+plugins: 
+    - search
+    - markdownextradata
+
+extra:
+    customer:
+        name: ReportLab
+        web:  https://reportlab.com/
+    static_root: https://s3.eu-west-2.amazonaws.com/docs.reportlab.com/docs/
+
+        
